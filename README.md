@@ -4,7 +4,7 @@ sorry_yahoo_finance([https://github.com/gogotanaka/sorry_yahoo_finance]())をみ
 
 ## install
 0  
-gem install syachicky
+'''gem install syachicky'''
 
 1  
 doSyachicky.rbに
@@ -20,7 +20,7 @@ syachicky.printData('#{syachiku["name"]}, 終値:#{syachiku["finish"]}')
 などと書く
 
 2  
-zloginに
+.zloginに
 
 ```zsh
 [[ -f ~/syachicky/doSyachicky.rb ]] && ruby ~/syachicky/doSyachicky.rb
