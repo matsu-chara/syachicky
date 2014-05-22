@@ -16,7 +16,7 @@ doSyachicky.rbに
 ```ruby
 require 'syachicky'
 
-syachicky = Syachicky::Syachicky.new(7522) #好きな証券コードをここに
+syachicky = Syachicky::Syachicky.new(好きな証券コードをここに)
 syachicky.dataUpdate()
 syachicky.printData('#{syachiku["name"]}, 終値:#{syachiku["finish"]}')
 ```
