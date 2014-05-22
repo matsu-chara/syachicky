@@ -1,5 +1,7 @@
 # syachicky
 
+ログイン時に株価を表示するためのgemです。
+
 sorry_yahoo_finance([https://github.com/gogotanaka/sorry_yahoo_finance]())をみたら思いついてしまったので勢いで書いた。反省しかない。
 
 ## install
@@ -14,7 +16,7 @@ doSyachicky.rbに
 ```ruby
 require 'syachicky'
 
-syachicky = Syachicky::Syachicky.new(<証券コードをここに>)
+syachicky = Syachicky::Syachicky.new(7522) #好きな証券コードをここに
 syachicky.dataUpdate()
 syachicky.printData('#{syachiku["name"]}, 終値:#{syachiku["finish"]}')
 ```
