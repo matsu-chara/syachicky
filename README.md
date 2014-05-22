@@ -4,7 +4,9 @@ sorry_yahoo_finance([https://github.com/gogotanaka/sorry_yahoo_finance]())をみ
 
 ## install
 0  
-'''gem install syachicky'''
+```zsh
+gem install syachicky
+```
 
 1  
 doSyachicky.rbに
