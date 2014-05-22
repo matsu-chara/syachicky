@@ -1,29 +1,33 @@
-# Syachicky
+# syachicky
 
-TODO: Write a gem description
+sorry_yahoo_finance([https://github.com/gogotanaka/sorry_yahoo_finance]())をみたら思いついてしまったので勢いで書いた。反省しかない。
 
-## Installation
+## install
+0  
+gem install syachicky
 
-Add this line to your application's Gemfile:
+1  
+doSyachicky.rbに
 
-    gem 'syachicky'
+```ruby
+require 'syachicky'
 
-And then execute:
+syachicky = Syachicky::Syachicky.new(<証券コードをここに>)
+syachicky.dataUpdate()
+syachicky.printData('#{syachiku["name"]}, 終値:#{syachiku["finish"]}')
+```
 
-    $ bundle
+などと書く
 
-Or install it yourself as:
+2  
+zloginに
 
-    $ gem install syachicky
+```zsh
+[[ -f ~/syachicky/doSyachicky.rb ]] && ruby ~/syachicky/doSyachicky.rb
+```
 
-## Usage
+を追加する
 
-TODO: Write usage instructions here
 
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/syachicky/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+以上でログイン時に御社株価その他もろもろが表示されます。
+取得は一日一回行います。

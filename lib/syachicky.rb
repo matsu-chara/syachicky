@@ -21,7 +21,7 @@ module Syachicky
         @lastDayData = nil
         
         # dataディレクトリ
-        @dataDir = File.expand_path(File.dirname(__FILE__)) + "/data"
+        @dataDir = File.expand_path(File.dirname(__FILE__)) + "/../data"
     end
     
     def dataUpdate

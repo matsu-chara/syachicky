@@ -19,9 +19,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rake", "~> 10.3"
   
-  spec.add_dependency "json"
-  spec.add_dependency "activesupport"
-  spec.add_dependency "sorry_yahoo_finance"
+  spec.add_dependency "json", "~> 1.8"
+  spec.add_dependency "activesupport", "~> 4.1"
+  spec.add_dependency "sorry_yahoo_finance", "~> 0.3"
 end
